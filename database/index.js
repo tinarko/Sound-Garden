@@ -6,3 +6,6 @@ var connection = mysql.createConnection({
   password : '',
   database : 'test'
 });
+
+
+module.exports.User = [{name: 'bob'}];
