@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
+  Redirect
 } from 'react-router-dom';
 
 import Balance from './components/Balance.jsx';
@@ -44,7 +45,8 @@ class App extends React.Component {
         <div>
         <h1>Thesis</h1>
         <ul>
-          <li><Link to="/">Balance</Link></li>
+          <Redirect from="/" to="/balance"/>
+          <li><Link to="/balance">Balance</Link></li>
           <li><Link to="/budget">Budget</Link></li>
           <li><Link to="/ccSelector">CC Selector</Link></li>
           <li><Link to="/portfolio">Portfolio</Link></li>
@@ -54,7 +56,7 @@ class App extends React.Component {
 
         <hr/>
 
-        <Route exact path="/" component={Balance}/>
+        <Route path="/balance" component={Balance}/>
         <Route path="/budget" component={Budget}/>
         <Route path="/ccSelector" component={CCSelector}/>
         <Route path="/portfolio" component={Portfolio}/>
