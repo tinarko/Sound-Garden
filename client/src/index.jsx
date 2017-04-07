@@ -50,10 +50,26 @@ class App extends React.Component {
     return (
       <Router>
         <div>
-          <h1>Thesis</h1>
-          <Navbar />
 
-          <hr/>
+        <h1>Thesis</h1>
+        <ul>
+          <Redirect from="/" to="/balance"/>
+          <li><Link to="/balance">Balance</Link></li>
+          <li><Link to="/budget">Budget</Link></li>
+          <li><Link to="/ccSelector">CC Selector</Link></li>
+          <li><Link to="/portfolio">Portfolio</Link></li>
+          <li><Link to="/emailNotifications">Email Notifications</Link></li>
+          <li><Link to="/">Logout</Link></li>
+        </ul>
+
+        <hr/>
+
+        <Route path="/balance" component={Balance}/>
+        <Route path="/budget" component={Budget}/>
+        <Route path="/ccSelector" component={CCSelector}/>
+        <Route path="/portfolio" component={Portfolio}/>
+        <Route path="/emailNotifications" component={EmailNotifications}/>
+
 
           <Route exact path="/" component={Login}/>
           <Route path="/balance" component={Balance}/>
