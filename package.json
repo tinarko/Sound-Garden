@@ -13,6 +13,7 @@
     "start": "npm run react-dev && npm run server-dev"
   },
   "dependencies": {
+    "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
     "babel-preset-react": "^6.23.0",
     "body-parser": "^1.17.1",
