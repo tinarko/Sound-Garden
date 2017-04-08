@@ -12,7 +12,8 @@
     "server-dev": "nodemon server/index.js",
     "react-dev-heroku": "webpack -p",
     "server-dev-node": "node server/index.js",
-    "start": "npm run react-dev-heroku && npm run server-dev-node"
+    "start": "node server/index.js",
+    "heroku-postbuild": "webpack"
   },
   "dependencies": {
     "babel-core": "^6.24.1",
