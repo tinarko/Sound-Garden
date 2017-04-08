@@ -11,6 +11,8 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
 var passport = require('passport');
+var http = require('http');
+http.createServer(function(req, res) {});
 
 // import passport authentication strategies
 var authentication = require('./authentication');
@@ -59,6 +61,8 @@ app.get('*', (req,res) => {
 });
 
 let port = process.env.PORT || 1337;
+
+// http.createServer(onRequest).listen(process.env.PORT || 6000);
 
 app.listen(port, function() {
   console.log('listening on ' + port + '!');

@@ -10,7 +10,9 @@
   "scripts": {
     "react-dev": "webpack -d --watch",
     "server-dev": "nodemon server/index.js",
-    "start": "npm run react-dev && npm run server-dev"
+    "react-dev-heroku": "webpack -p",
+    "server-dev-node": "node server/index.js",
+    "start": "npm run react-dev-heroku && npm run server-dev-node"
   },
   "dependencies": {
     "babel-core": "^6.24.1",
@@ -25,6 +27,7 @@
     "express-session": "^1.15.2",
     "moment": "^2.18.1",
     "google-maps-react": "^1.0.19",
+    "http": "0.0.0",
     "mysql": "^2.13.0",
     "node": "0.0.0",
     "nodemon": "^1.11.0",
