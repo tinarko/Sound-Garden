@@ -9,14 +9,19 @@
   },
   "scripts": {
     "react-dev": "webpack -d --watch",
-    "server-dev": "nodemon server/index.js"
+    "server-dev": "nodemon server/index.js",
+    "start": "npm run react-dev && npm run server-dev"
   },
   "dependencies": {
     "babel-loader": "^6.4.1",
     "babel-preset-react": "^6.23.0",
     "body-parser": "^1.17.1",
     "cookie-parser": "^1.4.3",
+<<<<<<< HEAD
     "envvar": "^1.1.0",
+=======
+    "dotenv": "^4.0.0",
+>>>>>>> (Deploy) Update files for Heroku
     "express": "^4.15.2",
     "express-session": "^1.15.2",
 
