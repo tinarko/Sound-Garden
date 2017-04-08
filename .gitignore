@@ -33,3 +33,6 @@ bower_components/
 
 # react native
 FinancialAdvisorly/
+
+# config.env
+*.env

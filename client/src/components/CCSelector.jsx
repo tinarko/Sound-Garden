@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 // import GoogleMap from './GoogleMap.jsx'
 // import Map from 'google-maps-react';
 import CCcashback from './CCcashback.jsx'
+import GoogleMap from './GoogleMap.jsx'
 
 class CCSelector extends React.Component {
   constructor(props) {
@@ -27,6 +28,10 @@ class CCSelector extends React.Component {
         </div>
         <div>
           <h1>Credit Card Selector</h1>
+          <p>Are you at Macy's?</p>
+          <p>If so, use your Wells credit card</p>
+          <p>Map Placeholder</p>
+          <GoogleMap/>
         </div>
       </div>
     );
