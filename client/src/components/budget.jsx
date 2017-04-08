@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import BudgetCategoryList from './BudgetCategoryList.jsx';
 import { getUserBudgets } from '../actions/budget.js';
 // import { receivedUserBudgets, fetchUserBudgetsError } from '../actions/budget.js';
+import BudgetCategories from './budgetcategories.jsx';
+
 
 class Budget extends React.Component {
   constructor (props) {
