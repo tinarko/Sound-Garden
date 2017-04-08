@@ -43,7 +43,6 @@ class App extends React.Component {
     //     console.log('error', error);
     //   });
           // <Redirect from="/" to="/balance"/>
-
   }
 
   render () {

@@ -48,8 +48,11 @@
   },
   "devDependencies": {
     "babel-cli": "^6.7.5",
+<<<<<<< HEAD
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-stage-2": "^6.24.1",
+=======
+>>>>>>> eeaa6cf8bef99f3345f721c7ab2183e6566b5a47
     "babel-register": "^6.7.2",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
   },

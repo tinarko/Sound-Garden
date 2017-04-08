@@ -48,14 +48,12 @@ app.get('/auth/facebook/return',
     res.redirect('/');
   });
 
+
 app.post('/plaid/access_token', requestHandler.plaid.accessToken);
 
-<<<<<<< HEAD
 app.get('/budget/getuserbudgets/:id', requestHandler.budget.getUserBudgets);
 
 
-=======
->>>>>>> (bug) add wildcard route
 app.get('*', (req,res) => {
   res.sendFile(path.resolve(__dirname,'..','client', 'dist', 'index.html'));
 });
@@ -66,6 +64,5 @@ let port = process.env.PORT || 1337;
 
 app.listen(port, function() {
   console.log('listening on ' + port + '!');
-
 });
 

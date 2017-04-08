@@ -1,7 +1,10 @@
 var mysql = require('mysql');
 
 var connection;
+<<<<<<< HEAD
 
+=======
+>>>>>>> eeaa6cf8bef99f3345f721c7ab2183e6566b5a47
 if (Number(process.env.PORT) === 1337) {
   connection = mysql.createConnection({
     host     : 'localhost',
@@ -17,8 +20,15 @@ if (Number(process.env.PORT) === 1337) {
     database : 'heroku_aa9603bdcb7e15e'
   });
 
+<<<<<<< HEAD
 // mysql --host=us-cdbr-iron-east-03.cleardb.net --user=b909a285debfe4 --password=7433ae29 --reconnect heroku_aa9603bdcb7e15e < schema.sql
 
+=======
+  // connection = mysql.createConnection(process.env.JAWSDB_URL);
+}
+
+// mysql --host=us-cdbr-iron-east-03.cleardb.net --user=b909a285debfe4 --password=7433ae29 --reconnect heroku_aa9603bdcb7e15e < schema.sql
+>>>>>>> eeaa6cf8bef99f3345f721c7ab2183e6566b5a47
 
 connection.connect();
 
