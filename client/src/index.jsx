@@ -11,7 +11,7 @@ import { Provider } from 'react-redux';
 
 import appReducer from './reducers/appReducer.js';
 import Balance from './components/Balance.jsx';
-import Budget from './components/Budget.jsx';
+import Budget from './components/budget.jsx';
 import CCSelector from './components/CCSelector.jsx';
 import Login from './components/Login.jsx';
 import Navbar from './components/Navbar.jsx';
