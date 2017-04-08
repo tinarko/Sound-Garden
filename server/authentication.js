@@ -1,5 +1,5 @@
 var passport = require('passport');
-var config = require('./../config/config');
+// var config = require('./../config/config');
 var FacebookStrategy = require('passport-facebook');
 var db = require('./../database/index');
 
