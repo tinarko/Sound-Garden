@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import BudgetCategories from './Budgetcategories.jsx';
+import BudgetCategories from './budgetcategories.jsx';
 
 class Budget extends React.Component {
   constructor (props) {
