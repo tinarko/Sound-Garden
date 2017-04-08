@@ -53,8 +53,7 @@ class App extends React.Component {
 
         <h1>Thesis</h1>
         <ul>
-          <Redirect from="/" to="/balance"/>
-          <li><Link to="/balance">Balance</Link></li>
+          <li><Link to="/">Balance</Link></li>
           <li><Link to="/budget">Budget</Link></li>
           <li><Link to="/ccSelector">CC Selector</Link></li>
           <li><Link to="/portfolio">Portfolio</Link></li>
@@ -64,7 +63,7 @@ class App extends React.Component {
 
         <hr/>
 
-        <Route path="/balance" component={Balance}/>
+        <Route path="/" component={Balance}/>
         <Route path="/budget" component={Budget}/>
         <Route path="/ccSelector" component={CCSelector}/>
         <Route path="/portfolio" component={Portfolio}/>
