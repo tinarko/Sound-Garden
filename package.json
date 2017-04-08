@@ -18,11 +18,8 @@
     "babel-preset-react": "^6.23.0",
     "body-parser": "^1.17.1",
     "cookie-parser": "^1.4.3",
-<<<<<<< HEAD
     "envvar": "^1.1.0",
-=======
     "dotenv": "^4.0.0",
->>>>>>> (Deploy) Update files for Heroku
     "express": "^4.15.2",
     "express-session": "^1.15.2",
 

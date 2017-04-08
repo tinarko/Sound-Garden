@@ -45,15 +45,12 @@ app.get('/auth/facebook/return',
     res.redirect('/');
   });
 
-<<<<<<< HEAD
 app.post('/plaid/access_token', requestHandler.plaid.accessToken);
-app.listen(1337, function() {
-  console.log('listening on port 1337!');
-=======
+
 let port = process.env.PORT || 1337;
 
 app.listen(port, function() {
   console.log('listening on ' + port + '!');
->>>>>>> (Deploy) Update files for Heroku
+
 });
 
