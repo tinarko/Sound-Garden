@@ -12,7 +12,7 @@ http.createServer(function(req, res) {});
 
 // import passport authentication strategies
 var authentication = require('./authentication');
-var config = require('./../config/config');
+// var config = require('./../config/config');
 var db = require('./../database/index');
 var requestHandler = require('./requestHandler');
 
