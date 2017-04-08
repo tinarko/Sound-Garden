@@ -1,3 +1,7 @@
+let dotenv = require('dotenv')
+dotenv.load();
+dotenv.config({path: process.env.PWD + '/config.env'});
+
 var express = require('express');
 var bodyParser = require('body-parser');
 var session = require('express-session');
@@ -41,7 +45,9 @@ app.get('/auth/facebook/return',
     res.redirect('/');
   });
 
-app.listen(1337, function() {
-  console.log('listening on port 1337!');
+let port = process.env.PORT || 1337;
+
+app.listen(port, function() {
+  console.log('listening on ' + port + '!');
 });
 
