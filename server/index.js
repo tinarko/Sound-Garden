@@ -1,8 +1,5 @@
 let dotenv = require('dotenv')
-<<<<<<< HEAD
 var path = require('path');
-=======
->>>>>>> (Deploy) Update files for Heroku
 dotenv.load();
 dotenv.config({path: process.env.PWD + '/config.env'});
 
@@ -53,9 +50,12 @@ app.get('/auth/facebook/return',
 
 app.post('/plaid/access_token', requestHandler.plaid.accessToken);
 
+<<<<<<< HEAD
 app.get('/budget/getuserbudgets/:id', requestHandler.budget.getUserBudgets);
 
 
+=======
+>>>>>>> (bug) add wildcard route
 app.get('*', (req,res) => {
   res.sendFile(path.resolve(__dirname,'..','client', 'dist', 'index.html'));
 });
