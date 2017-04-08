@@ -47,7 +47,7 @@ app.get('/auth/facebook/return',
   });
 
 app.get('*', (req,res) => {
-  res.sendFile(path.resolve(__dirname,'..','client', 'dist', 'index.html'));
+  res.sendFile(path.resolve(__dirname,'..','client', 'index.html'));
 });
 
 let port = process.env.PORT || 1337;
