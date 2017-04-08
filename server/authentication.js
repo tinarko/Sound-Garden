@@ -1,8 +1,6 @@
 var passport = require('passport');
-// var config = require('./../config/config');
 var FacebookStrategy = require('passport-facebook');
 var db = require('./../database/index');
-
 
 passport.use(new FacebookStrategy({
   clientID: process.env.FB_appID,

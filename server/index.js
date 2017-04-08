@@ -1,15 +1,13 @@
 let dotenv = require('dotenv')
-var path = require('path');
 dotenv.load();
 dotenv.config({path: process.env.PWD + '/config.env'});
 
+var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
 var passport = require('passport');
-var http = require('http');
-http.createServer(function(req, res) {});
 
 // import passport authentication strategies
 var authentication = require('./authentication');
@@ -53,14 +51,11 @@ app.post('/plaid/access_token', requestHandler.plaid.accessToken);
 
 app.get('/budget/getuserbudgets/:id', requestHandler.budget.getUserBudgets);
 
-
 app.get('*', (req,res) => {
   res.sendFile(path.resolve(__dirname,'..','client', 'dist', 'index.html'));
 });
 
 let port = process.env.PORT || 1337;
-
-// http.createServer(onRequest).listen(process.env.PORT || 6000);
 
 app.listen(port, function() {
   console.log('listening on ' + port + '!');
