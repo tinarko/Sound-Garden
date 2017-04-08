@@ -16,7 +16,6 @@ if (Number(process.env.PORT) === 1337) {
     password : '7433ae29',
     database : 'heroku_aa9603bdcb7e15e'
   });
-}
 
 // mysql --host=us-cdbr-iron-east-03.cleardb.net --user=b909a285debfe4 --password=7433ae29 --reconnect heroku_aa9603bdcb7e15e < schema.sql
 
