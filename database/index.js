@@ -1,7 +1,7 @@
 var mysql = require('mysql');
 
 var connection;
-if (process.env.PORT === 1337) {
+if (Number(process.env.PORT) === 1337) {
   connection = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
@@ -9,7 +9,13 @@ if (process.env.PORT === 1337) {
     database : 'thesis'
   });
 } else {
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
+   connection = mysql.createConnection({
+    host     : 'wvulqmhjj9tbtc1w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    user     : 'r2436uuy1mtahi2l',
+    password : 'tjhzqwn1qnor6msa',
+    database : 'thesis'
+  });
+  // connection = mysql.createConnection(process.env.JAWSDB_URL);
 }
 
 connection.connect();
