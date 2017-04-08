@@ -1,4 +1,5 @@
 let dotenv = require('dotenv')
+var path = require('path');
 dotenv.load();
 dotenv.config({path: process.env.PWD + '/config.env'});
 
@@ -46,6 +47,10 @@ app.get('/auth/facebook/return',
     // redirect home on successful login
     res.redirect('/');
   });
+
+app.get('*', (req,res) => {
+  res.sendFile(path.resolve(__dirname,'..','client', 'dist', 'index.html'));
+});
 
 let port = process.env.PORT || 1337;
 
