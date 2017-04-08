@@ -10,13 +10,16 @@ if (Number(process.env.PORT) === 1337) {
   });
 } else {
    connection = mysql.createConnection({
-    host     : 'wvulqmhjj9tbtc1w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-    user     : 'r2436uuy1mtahi2l',
-    password : 'tjhzqwn1qnor6msa',
-    database : 'thesis'
+    host     : 'us-cdbr-iron-east-03.cleardb.net',
+    user     : 'b909a285debfe4',
+    password : '7433ae29',
+    database : 'heroku_aa9603bdcb7e15e'
   });
+
   // connection = mysql.createConnection(process.env.JAWSDB_URL);
 }
+
+// mysql --host=wvulqmhjj9tbtc1w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com --user=r2436uuy1mtahi2l --password=tjhzqwn1qnor6msa < schema.sql
 
 connection.connect();
 
