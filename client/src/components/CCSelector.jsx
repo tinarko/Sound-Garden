@@ -32,7 +32,6 @@ class CCSelector extends React.Component {
           <p>If so, use your Wells credit card</p>
           <p>Map Placeholder</p>
           <GoogleMap/>
-
         </div>
       </div>
     );
