@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 
 import Balance from './components/Balance.jsx';
-import Budget from './components/Budget.jsx';
+import Budget from './components/budget.jsx';
 import CCSelector from './components/CCSelector.jsx';
 import Portfolio from './components/Portfolio.jsx';
 import EmailNotifications from './components/EmailNotifications.jsx';
