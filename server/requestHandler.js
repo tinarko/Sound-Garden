@@ -2,7 +2,6 @@ var envvar = require('envvar');
 var moment = require('moment');
 var plaid = require('plaid');
 
-
 // var config = require('./../config/config');
 var db = require('./../database/index');
 var config = require('./../config/config');
