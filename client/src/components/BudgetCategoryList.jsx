@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import BudgetCategories from './BudgetCategories.jsx';
+import BudgetCategories from './budgetCategories.jsx';
 import { connect } from 'react-redux';
 import { getUserBudgets } from '../actions/budget.js';
 
