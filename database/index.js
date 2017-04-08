@@ -19,6 +19,7 @@ if (Number(process.env.PORT) === 1337) {
 
 // mysql --host=us-cdbr-iron-east-03.cleardb.net --user=b909a285debfe4 --password=7433ae29 --reconnect heroku_aa9603bdcb7e15e < schema.sql
 
+
 connection.connect();
 
 module.exports = {
